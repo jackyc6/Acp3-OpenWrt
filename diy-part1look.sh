@@ -18,4 +18,4 @@
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # 添加passwall依赖库
-git clone https://github.com/kenzok8/small package/small
+#git clone https://github.com/kenzok8/small package/small
