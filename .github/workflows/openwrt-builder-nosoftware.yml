@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: OpenWrt Builder_NO_SoftWare
+name: OpenWrt Builder_Wifi
 
 on:
   repository_dispatch:
@@ -25,9 +25,9 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config3
-  DIY_P1_SH: diy-part1no.sh
-  DIY_P2_SH: diy-part2no.sh
+  CONFIG_FILE: .configwifi
+  DIY_P1_SH: diy-part1wifi.sh
+  DIY_P2_SH: diy-part2wifi.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: false
