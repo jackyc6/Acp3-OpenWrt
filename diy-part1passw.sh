@@ -18,7 +18,7 @@
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
 # 添加passwall依赖库
-git clone https://github.com/kenzok8/small package/small
+#git clone https://github.com/kenzok8/small package/small
 
 sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
@@ -27,5 +27,4 @@ rm -rf feeds/packages/net/{alist,adguardhome,mosdns,xray*,v2ray*,v2ray*,sing*,sm
 rm -rf feeds/packages/utils/v2dat
 rm -rf feeds/packages/lang/golang
 git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
-./scripts/feeds install -a 
-make menuconfig
+
